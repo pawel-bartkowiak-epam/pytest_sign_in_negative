@@ -3,8 +3,8 @@ This module is used for testing signing in
 """
 import json
 
-from PageObjects.sign_in_page import SignInPageObjects
-from Libs.base_page import BasePage
+from PageObjects.SignInPageObjects import SignInPageObjects
+from Libs.BasePage import BasePage
 
 
 def test_invalid_email_sign_in(driver, base_page_url):

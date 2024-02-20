@@ -5,7 +5,6 @@ This file contains fixtures that are automatically discovered and used by pytest
 import pytest
 
 from selenium import webdriver
-from webdriver_manager.firefox import GeckoDriverManager
 
 
 @pytest.fixture(scope='session')
@@ -13,7 +12,7 @@ def driver():
     """
     Fixture function to provide a WebDriver instance for testing.
     """
-    web_driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+    web_driver = webdriver.Firefox()
     yield web_driver
     web_driver.quit()
 

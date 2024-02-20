@@ -6,8 +6,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from Libs.base_page import BasePage
-from Locators.sign_in_locators import SignInLocators
+from Libs.BasePage import BasePage
+from Locators.SignInLocators import SignInLocators
 
 
 class SignInPageObjects(BasePage):
